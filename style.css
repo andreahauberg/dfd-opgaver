@@ -6,17 +6,18 @@
     }
 }
 
+.card .content:not(:has(h3)):not(:has(img)) {
+    font-size: 1.2rem; 
+    line-height: 1.6;
+} 
 
+ .card .content:not(:has(img)) h3 {
+    font-size: 2.5rem;
+}
 
-
-
-
-
-
-
-
-
-
+.card:has(> img) {
+    padding: 0; 
+} 
 
 
 
