@@ -9,8 +9,70 @@
     --gray-700: #374151;
     --gray-800: #1f2937;
     --gray-900: #111827;
+    --font-size-root: 16px; 
+    --line-height-root: 1.5;
+    --spacing-unit: 8px;
 }
 
 body {
     font-family: system-ui, sans-serif;
 }
+
+html {
+    font-size: var(--font-size-root);
+    line-height: var(--line-height-root);
+}
+
+h1 {
+    font-size: calc(var(--font-size-root) * 2.25);
+    line-height: calc(var(--line-height-root) * 1.2);
+}
+
+h2 {
+    font-size: calc(var(--font-size-root) * 1.75);
+    line-height: calc(var(--line-height-root) * 1.2);
+}
+
+h3 {
+    font-size: calc(var(--font-size-root) * 1.5);
+    line-height: calc(var(--line-height-root) * 1.2);
+}
+
+h4 {
+    font-size: calc(var(--font-size-root) * 1.25);
+    line-height: calc(var(--line-height-root) * 1.2);
+}
+
+p {
+    font-size: var(--font-size-root);
+    line-height: calc(var(--line-height-root) * 1.5);
+}
+
+.text-lead {
+    font-size: calc(var(--font-size-root) * 1.25);
+    line-height: calc(var(--line-height-root) * 1.5);
+}
+
+.text-small {
+    font-size: calc(var(--font-size-root) * 0.875);
+    line-height: calc(var(--line-height-root) * 1.5);
+}
+
+article {
+    margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, table {
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--gray-800);
+}
+
+p, a, strong, em, code {
+    color: var(--gray-700); 
+}
+
+
