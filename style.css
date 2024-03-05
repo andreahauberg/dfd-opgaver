@@ -1,4 +1,28 @@
 article {
-    max-width: 65ch;
     margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+    column-gap: 1rem;
+    justify-content: center;
+
+    > * {
+        grid-column: 2;
+        justify-self: center;
+      }
+
+      > :not(img, .feature) {
+        max-width: 65ch;
+      }
+      
+      img {
+        grid-column: 1 / -1;
+      }
+
+      .feature{
+        grid-column: 2/3;
+      }
+
+      .lead{
+        max-width: 51ch;
+      }
 }
