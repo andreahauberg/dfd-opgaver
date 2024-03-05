@@ -52,12 +52,14 @@ button{
     padding:1rem;
     border-radius: 30px;
     padding: 16px 30px;
+    display: inline-block;
 }
 
 #image_section {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(4, 1fr);    
+    grid-template-rows: repeat(4, 1fr);   
+    align-items: center;
     gap: 10px;                             
 }
 
