@@ -2,7 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/abril-fatface');
 
 article {
-    font-family: 'Gill Sans', sans-serif;
+    font-family: 'lato', sans-serif;
     max-inline-size: 400px;
     background: #fff;
     margin-block: 3rem;
@@ -15,7 +15,6 @@ article {
 
 .picture {
     display: grid;
-    padding: .5rem;
 
     >* {
         grid-area: 1 / 1;
@@ -34,15 +33,17 @@ article {
         letter-spacing: 2px;
         line-height: 1;
         place-self: end;
-        background: #BDC4CE;
+        background: #575e7d;
         color: #fff;
         margin: 1rem;
     }
 
     img {
-        border: 1px solid #DADCEB;
-        border-radius: .5rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        padding: 0;
     }
+
 }
 
 .card-content {
@@ -52,37 +53,39 @@ article {
 }
 
 .title {
-    font-family: 'Abril Fatface', sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    color: #3C55CC;
+    padding-top: 1.5rem;
 }
 
 .location {
-    color: #C8C9CB;
-    text-transform: uppercase;
+    color: #575e7d;
     font-size: .95em;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 .description p {
-    text-align: center;
+    line-height: 1.6;
 }
 
 .amenities-details {
     display: flex;
     gap: 1rem;
-
+    padding-top:1rem;
+    padding-bottom:1rem;
+    border-top: 1px solid #908F9F;
+    border-bottom: 1px solid #908F9F;
+    
     li {
         flex: 1;
         display: grid;
         gap: .75rem;
         place-items: center;
         padding: .25rem;
-        background: #F0F2FF;
-        color: #3C55CC;
+        color: #908F9F;
     }
 }
-
 
 footer {
     padding: 1rem 2rem;
